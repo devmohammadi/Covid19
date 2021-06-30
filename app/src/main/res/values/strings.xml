@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Covid19</string>
+    <string name="corona_virus">Corona Virus</string>
+    <string name="total_confirmed">Total Confirmed</string>
+    <string name="total_deaths">Total Deaths</string>
+    <string name="total_recoverd">Total Recoverd</string>
+    <string name="img_description">Description</string>
+    <string name="country_cases">Cases : </string>
+    <string name="country_deaths">Deaths : </string>
+    <string name="country_recovered">Recovered : </string>
+    <string name="countryTodayCases">Today Cases : </string>
+    <string name="countryTodayRecovered">Today Recovered : </string>
+    <string name="countryTodayDeaths">Today Deaths : </string>
+    <string name="countryCritical">Critical : </string>
+    <string name="language">فارسی</string>
+    <string name="english">English</string>
+</resources>
+

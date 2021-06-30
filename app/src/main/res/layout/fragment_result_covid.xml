@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:padding="10dp"
+    tools:context=".controller.fragment.ResultCovidFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ProgressBar
+            android:id="@+id/progressBarResult"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="110dp"
+            android:layout_height="124dp"
+            android:foregroundGravity="center|center_horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:indeterminate="true"
+            android:indeterminateTintMode="src_atop"
+            android:indeterminateTint="@color/colorPrimaryDark"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <RelativeLayout
+        android:id="@+id/resultId"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center|center_horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/CoronaVirus"
+            style="@style/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:paddingBottom="20dp"
+            android:text="@string/corona_virus"
+            android:textAllCaps="true"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="36sp" />
+
+        <TextView
+            android:id="@+id/TotalConfirmed"
+            style="@style/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/CoronaVirus"
+            android:text="@string/total_confirmed" />
+
+        <TextView
+            android:id="@+id/tvLabelTotalConfirmed"
+            style="@style/result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/TotalConfirmed"
+            android:paddingBottom="10dp"
+            android:textColor="@color/colorPrimaryDark"
+            tools:text="1542548" />
+
+        <TextView
+            android:id="@+id/TotalDeaths"
+            style="@style/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvLabelTotalConfirmed"
+            android:text="@string/total_deaths" />
+
+        <TextView
+            android:id="@+id/tvLabelTotalDeaths"
+            style="@style/result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/TotalDeaths"
+            android:paddingBottom="10dp"
+            android:textColor="@android:color/holo_red_dark"
+            tools:text="15548" />
+
+        <TextView
+            android:id="@+id/TotalRecoverd"
+            style="@style/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvLabelTotalDeaths"
+            android:text="@string/total_recoverd" />
+
+        <TextView
+            android:id="@+id/tvLabelTotalRecoverd"
+            style="@style/result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/TotalRecoverd"
+            android:textColor="@color/green"
+            tools:text="154" />
+
+        <ToggleButton
+            android:id="@+id/btnLanguage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvLabelTotalRecoverd"
+            android:background="@android:color/transparent"
+            android:fontFamily="@font/khandevane"
+            android:textOff="@string/language"
+            android:textOn="@string/english"
+            android:visibility="gone"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+</FrameLayout>

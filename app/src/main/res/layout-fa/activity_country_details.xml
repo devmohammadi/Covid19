@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".controller.activity.CountryDetailsActivity">
+
+
+    <ImageView
+        android:id="@+id/detailCountryImage"
+        android:layout_width="0dp"
+        android:layout_height="190dp"
+        android:contentDescription="@string/img_description"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/country" />
+
+    <TextView
+        android:id="@+id/detailCountryName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="16dp"
+        android:padding="2dp"
+        android:textAllCaps="true"
+        android:textColor="@android:color/white"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/detailCountryImage"
+        tools:text="ایران" />
+
+    <TextView
+        android:id="@+id/detailsCases"
+        style="@style/detailTitle"
+        android:text="@string/country_cases"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/detailCountryName" />
+
+    <TextView
+        android:id="@+id/detailsCasesResult"
+        style="@style/detailResult"
+        android:textColor="@color/cases"
+        app:layout_constraintBottom_toBottomOf="@+id/detailsCases"
+        app:layout_constraintStart_toEndOf="@+id/detailsCases"
+        tools:text="154827" />
+
+    <TextView
+        android:id="@+id/detailsTodayCases"
+        style="@style/detailTitle"
+        android:text="@string/countryTodayCases"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/detailsCases" />
+
+    <TextView
+        android:id="@+id/detailsTodayCasesResult"
+        style="@style/detailResult"
+        android:textColor="@color/cases"
+        app:layout_constraintBottom_toBottomOf="@+id/detailsTodayCases"
+        app:layout_constraintStart_toEndOf="@+id/detailsTodayCases"
+        tools:text="54654685" />
+
+    <TextView
+        android:id="@+id/detailsDeaths"
+        style="@style/detailTitle"
+        android:text="@string/country_deaths"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/detailsTodayCases" />
+
+    <TextView
+        android:id="@+id/detailsDeathsResult"
+        style="@style/detailResult"
+        android:textColor="@color/red"
+        app:layout_constraintBottom_toBottomOf="@+id/detailsDeaths"
+        app:layout_constraintStart_toEndOf="@+id/detailsDeaths"
+        tools:text="35436" />
+
+    <TextView
+        android:id="@+id/detailsTodayDeathsResult"
+        style="@style/detailResult"
+        android:textColor="@color/red"
+        app:layout_constraintBottom_toBottomOf="@+id/detailsTodayDeaths"
+        app:layout_constraintStart_toEndOf="@+id/detailsTodayDeaths"
+        tools:text="566" />
+
+    <TextView
+        android:id="@+id/detailsRecoveredResult"
+        style="@style/detailResult"
+        android:textColor="@color/green"
+        app:layout_constraintBottom_toBottomOf="@+id/detailsRecovered"
+        app:layout_constraintStart_toEndOf="@+id/detailsRecovered"
+        tools:text="135" />
+
+    <TextView
+        android:id="@+id/detailsTodayRecoveredResult"
+        style="@style/detailResult"
+        android:textColor="@color/green"
+        app:layout_constraintBottom_toBottomOf="@+id/detailsTodayRecovered"
+        app:layout_constraintStart_toEndOf="@+id/detailsTodayRecovered"
+        tools:text="5643654" />
+
+    <TextView
+        android:id="@+id/detailsTodayDeaths"
+        style="@style/detailTitle"
+        android:text="@string/countryTodayDeaths"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/detailsDeaths" />
+
+    <TextView
+        android:id="@+id/detailsRecovered"
+        style="@style/detailTitle"
+        android:text="@string/country_recovered"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/detailsCritical" />
+
+    <TextView
+        android:id="@+id/detailsTodayRecovered"
+        style="@style/detailTitle"
+        android:text="@string/countryTodayRecovered"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/detailsRecovered" />
+
+    <TextView
+        android:id="@+id/detailsCritical"
+        style="@style/detailTitle"
+        android:text="@string/countryCritical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/detailsTodayDeaths" />
+
+    <TextView
+        android:id="@+id/detailsCriticalResult"
+        style="@style/detailResult"
+        android:textColor="@color/red"
+        app:layout_constraintBottom_toBottomOf="@+id/detailsCritical"
+        app:layout_constraintStart_toEndOf="@+id/detailsCritical"
+        tools:text="798" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

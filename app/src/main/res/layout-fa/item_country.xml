@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="4dp"
+    android:layout_marginBottom="4dp"
+    android:elevation="2dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        app:cardBackgroundColor="#8BFFFFFF"
+        app:cardCornerRadius="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:id="@+id/countryCardView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="7dp">
+
+            <ImageView
+                android:id="@+id/imageCountry"
+                android:layout_width="135dp"
+                android:layout_height="110dp"
+                android:layout_alignTop="@id/tvCountryName"
+                android:layout_alignBottom="@id/tvCountryRecovered"
+                android:layout_marginStart="6dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginEnd="6dp"
+                android:layout_marginBottom="6dp"
+                android:contentDescription="@string/img_description"
+                android:scaleType="centerCrop"
+                app:srcCompat="@android:drawable/ic_menu_mapmode" />
+
+            <TextView
+                android:id="@+id/tvCountryName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_toEndOf="@id/imageCountry"
+                android:padding="3dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="20sp"
+                tools:text="نام کشور" />
+
+            <TextView
+                android:id="@+id/tvCountryCases"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvCountryName"
+                android:layout_toEndOf="@id/imageCountry"
+                android:padding="3dp"
+                android:text="@string/country_cases"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tvCountryCasesResult"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvCountryName"
+                android:layout_toEndOf="@id/tvCountryCases"
+                android:padding="3dp"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp"
+                tools:text="1548248" />
+
+            <TextView
+                android:id="@+id/tvCountryDeaths"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvCountryCases"
+                android:layout_toEndOf="@id/imageCountry"
+                android:padding="3dp"
+                android:text="@string/country_deaths"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tvCountryDeathsResult"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvCountryCases"
+                android:layout_toEndOf="@id/tvCountryDeaths"
+                android:padding="3dp"
+                android:textColor="@android:color/holo_red_dark"
+                android:textSize="16sp"
+                tools:text="145288" />
+
+            <TextView
+                android:id="@+id/tvCountryRecovered"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvCountryDeaths"
+                android:layout_toEndOf="@id/imageCountry"
+                android:padding="3dp"
+                android:text="@string/country_recovered"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tvCountryRecoveredResult"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvCountryDeaths"
+                android:layout_toEndOf="@id/tvCountryRecovered"
+                android:padding="3dp"
+                android:textColor="@color/green"
+                android:textSize="16sp"
+                tools:text="254882" />
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

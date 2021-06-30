@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">کرونا</string>
+    <string name="corona_virus">کرونا ویروس</string>
+    <string name="total_confirmed">مجموع مبتلایان</string>
+    <string name="total_deaths">مجموع فوت شدگان</string>
+    <string name="total_recoverd">مجموع بهبود یافتگان</string>
+    <string name="img_description">Description</string>
+    <string name="country_cases">مبتلایان : </string>
+    <string name="country_deaths">فوت شدگان : </string>
+    <string name="country_recovered">بهبود یافتگان : </string>
+    <string name="countryTodayCases">مبتلایان امروز : </string>
+    <string name="countryTodayRecovered">بهبودی های امروز : </string>
+    <string name="countryTodayDeaths">فوتی های امروز : </string>
+    <string name="countryCritical">وغعیت وخیم : </string>
+    <string name="language">Persian</string>
+    <string name="english">انگلیسی</string>
+</resources>
